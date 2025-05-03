@@ -1,0 +1,118 @@
+body {
+  background: #fff;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+.page.active {
+  display: flex;
+}
+.logo-block {
+  margin-top: 48px;
+  text-align: center;
+}
+.logo-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px auto;
+  background: url('logo.svg') no-repeat center/contain;
+}
+.logo-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a357a;
+  margin: 0 0 8px 0;
+  letter-spacing: 1px;
+}
+.logo-desc {
+  font-size: 22px;
+  color: #2d3e6e;
+  margin-bottom: 32px;
+}
+.logo-desc .ai {
+  font-weight: bold;
+  color: #00b6ff;
+}
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 40px 0 0 0;
+}
+.main-btn {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #aee9f7 0%, #bfa7f7 100%);
+  border: none;
+  border-radius: 40px;
+  padding: 18px 0;
+  width: 420px;
+  box-shadow: 0 4px 16px #d1e6ff;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 8px #6e7bbd;
+}
+.main-btn:hover {
+  background: linear-gradient(90deg, #7ed6fb 0%, #a7bff7 100%);
+  box-shadow: 0 8px 24px #b3d1ff;
+}
+.arrow {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+  width: 64px;
+  height: 64px;
+  background: url('arrow.svg') no-repeat center/contain;
+}
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 48px;
+  width: 420px;
+}
+.form-block input {
+  font-size: 28px;
+  border: none;
+  border-radius: 32px;
+  background: #f2f3f7;
+  color: #5a6a9e;
+  padding: 22px 32px;
+  outline: none;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .main-btn, .form-block, .form-block input {
+    width: 90vw;
+    font-size: 22px;
+    padding: 14px 0;
+  }
+  .logo-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .arrow {
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    bottom: 16px;
+  }
+} 

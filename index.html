@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalenTag</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 首頁 -->
+    <section id="home" class="page active">
+      <div class="logo-block">
+        <div class="logo-icon"></div>
+        <h1 class="logo-title">TalenTag</h1>
+        <div class="logo-desc"><span class="ai">AI</span>精準媒合人才與機會</div>
+      </div>
+      <div class="btn-group">
+        <button id="btn-company" class="main-btn">我是企業主</button>
+        <button id="btn-student" class="main-btn">我是學生</button>
+      </div>
+      <div class="arrow"></div>
+    </section>
+    <!-- 企業主註冊頁 -->
+    <section id="company-register" class="page">
+      <h1 class="logo-title">TalenTag</h1>
+      <form class="form-block">
+        <input type="text" placeholder="公司名稱">
+        <input type="text" placeholder="聯絡人姓名">
+        <input type="email" placeholder="電子郵件">
+        <input type="text" placeholder="產業類別">
+        <input type="text" placeholder="公司簡介">
+        <input type="password" placeholder="設定密碼 / 第三方登入">
+      </form>
+      <div class="arrow"></div>
+    </section>
+    <!-- 學生註冊頁 -->
+    <section id="student-register" class="page">
+      <h1 class="logo-title">TalenTag</h1>
+      <form class="form-block">
+        <input type="text" placeholder="姓名">
+        <input type="email" placeholder="電子郵件">
+        <input type="text" placeholder="學校">
+        <input type="text" placeholder="科系">
+        <input type="text" placeholder="年級">
+        <input type="password" placeholder="設定密碼 / 第三方登入">
+      </form>
+      <div class="arrow"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
